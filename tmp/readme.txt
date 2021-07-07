@@ -1,0 +1,1 @@
+This directory is to hold files temporarily while being uploaded to discord.
