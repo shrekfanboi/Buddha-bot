@@ -1,10 +1,9 @@
 module.exports = {
     SendReply(message){
         const fs = require('fs');
-        const path = require('path');
         const readline = require('readline');
         const file = readline.createInterface({
-            input:fs.createReadStream(path.join(_dirname,"sad_words.txt")),
+            input:fs.createReadStream("sad_words.txt"),
             output:process.stdout,
             terminal:false
         });
