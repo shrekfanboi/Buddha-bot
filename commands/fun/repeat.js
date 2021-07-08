@@ -1,5 +1,5 @@
 module.exports = {
-    name:'repeat_me',
+    name:'repeat',
     description:'Make the bot say what you like',
     args:true,
     execute(message,args){
