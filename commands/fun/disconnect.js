@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'disconnect_voice',
+	name: 'disconnect',
 	description: 'Disconnect from voice channel',
 	execute(message, args,queue) {
 		const voiceChannel = message.member.voice.channel;
