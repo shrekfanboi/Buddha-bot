@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-    name:'stop_song',
+    name:'stop',
     description:'Stop the current song',
     async execute(message,args,queue){
         if(!message.member.voice.channel){
