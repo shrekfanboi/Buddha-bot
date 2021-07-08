@@ -15,6 +15,9 @@ module.exports = {
                 data = JSON.parse(data)[0]['urls']['regular'];
                 message.channel.send(data);
             })
+            resp.on('error', () => {
+                message.channel.send('Thats enough for the day!');
+            })
         })
     }
 }
