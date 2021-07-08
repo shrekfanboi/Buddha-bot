@@ -1,5 +1,5 @@
 module.exports = {
-    name:'img_search',
+    name:'img',
     args:true,
     cooldown:5,
     execute(message,args){
