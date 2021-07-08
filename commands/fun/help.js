@@ -5,7 +5,7 @@ module.exports = {
 		const data = [];
         const { commands } = message.client;
         data.push('Here\'s a list of all my commands:');
-	    data.push(commands.map(command => '!'+command.name).join('\n'));
+	    data.push(commands.map(command => '~'+command.name).join('\n'));
         return message.author.send(data,{ split:true })
         .then(() => {
 			if (message.channel.type === 'dm') return;
