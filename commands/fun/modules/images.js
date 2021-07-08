@@ -12,7 +12,7 @@ module.exports = {
                     data += chunk;
             })
             resp.on('end', () => {
-                data = JSON.parse(data)[0]['urls']['raw'];
+                data = JSON.parse(data)[0]['urls']['regular'];
                 message.channel.send(data);
             })
         })
