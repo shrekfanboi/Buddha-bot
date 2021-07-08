@@ -1,5 +1,5 @@
 module.exports = {
-	name: 'help_me',
+	name: 'help',
 	description: 'List of all commands',
 	execute(message, args) {
 		const data = [];
