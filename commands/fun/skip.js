@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-    name:'skip_song',
+    name:'skip',
     description:'Skip the current song',
     async execute(message,args,queue){
         if(!message.member.voice.channel){
