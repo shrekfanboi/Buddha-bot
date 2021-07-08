@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 module.exports = {
-	name: 'play_song',
+	name: 'play',
 	description: 'Play songs!',
     args:true,
 	async execute(message, args,queue) {
