@@ -1,5 +1,5 @@
 module.exports = {
-    name:'upload_song',
+    name:'upload',
     description:'Uploads a song to the server',
     args:true,
     cooldown:10,
