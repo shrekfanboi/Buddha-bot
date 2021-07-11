@@ -4,7 +4,7 @@ module.exports = {
         const path = require('path');
         const readline = require('readline');
         const temp = message.content.toLowerCase();
-        var obj = JSON.parse(fs.readFileSync(__dirname+"\\customMessage.json","utf-8"));
+        var obj = JSON.parse(fs.readFileSync(path.join(__dirname,"customMessage.json"));
         if(obj[message.guild.id]){
             if(obj[message.guild.id].hasOwnProperty(temp)){
                 message.lineReply(obj[message.guild.id][temp]);
