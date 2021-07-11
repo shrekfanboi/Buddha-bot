@@ -1,6 +1,7 @@
 module.exports = {
     SendReply(message){
         const fs = require('fs');
+        const path = require('path');
         const readline = require('readline');
         var obj = JSON.parse(fs.readFileSync(path.join(__dirname,'customMessage.json')));
         temp = message.content.toLowerCase();
