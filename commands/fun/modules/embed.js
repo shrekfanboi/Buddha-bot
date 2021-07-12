@@ -22,7 +22,6 @@ module.exports = {
     },
     TranslatedMessage: function(query,translations){
         const list = new Discord.MessageEmbed()
-        .setTitle(`Possible Translations`)
         .setColor('#000000')
         for(let i=0;i<translations.length;i++){
             if(translations[i] && !translations[i].includes(query)){
