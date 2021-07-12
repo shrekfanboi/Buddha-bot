@@ -25,7 +25,7 @@ module.exports = {
         .setColor('#000000')
         for(let i=0;i<translations.length;i++){
             if(translations[i] && !translations[i].includes(query)){
-                list.addField(`${i+1}.${translations[i]}`,"\u200b");
+                list.addField(`${translations[i]}`,"\u200b");
             }
         }
         return list;
