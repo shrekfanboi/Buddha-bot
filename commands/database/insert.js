@@ -1,7 +1,8 @@
 const { Pool } = require("pg")
 module.exports = {
     async Insert(data){
-        pool = await require('./conn').Connect();
+        const path = require('path');
+        pool = await require(path.join(__dirname,'conn.js')).Connect();
         (async() => {
             const client = await pool.connect()
             try{
