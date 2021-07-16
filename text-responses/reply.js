@@ -4,7 +4,7 @@ module.exports = {
         const readline = require('readline');
         const path = require('path');
         temp = message.content.toLowerCase();
-        res = await require('./../commands/database/read').Read([message.guild.name,temp]);
+        res = await require(path.join(__dirname,'/../commands/database/read')).Read([message.guild.name,temp]);
         if(res){
             message.lineReply(res['reply']);
             return;
