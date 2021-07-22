@@ -12,6 +12,7 @@ module.exports = {
             message.channel.send('No songs to skip');
             return;
         }
+        if(!serverQueue.connection) return;
         message.channel.send(`<:ok_hand:861236517967495178>`);
         serverQueue.connection.dispatcher.end();
         console.log(`${serverQueue.playlist[0].title} skipped`);
