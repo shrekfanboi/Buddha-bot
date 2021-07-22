@@ -10,7 +10,7 @@ module.exports = {
         }
         const ytdl = require('ytdl-core');
         song =  await require('./modules/search.js').YoutubeSearch(args,ytdl);
-        if(!queue.size){
+        if(!queue.get(message.guild.id)){
             const queueConstruct = {
                 messageChannel:message.channel,
                 playlist:[],
