@@ -9,7 +9,7 @@ module.exports = {
             queue.clear();
             return;
         }
-        const dispatcher = serverQueue.connection.play(ytdl(serverQueue.playlist[0].url,{highWaterMark: 1<<25}),{type: 'opus'});
+        const dispatcher = serverQueue.connection.play(ytdl(serverQueue.playlist[0].url,{highWaterMark: 1<<25}));
         dispatcher.on("finish", () => {
             serverQueue.playlist.shift();
             this.Play(queue,guild,ytdl);
