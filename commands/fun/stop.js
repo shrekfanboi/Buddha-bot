@@ -12,6 +12,7 @@ module.exports = {
             message.channel.send('No songs to stop');
             return;
         }
+        if(!serverQueue.connection) return;
         serverQueue.playlist = [];
         serverQueue.connection.dispatcher.end();
         message.channel.send(`<:octagonal_sign:861237129833349150>`);
