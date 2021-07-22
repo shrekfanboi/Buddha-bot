@@ -32,6 +32,16 @@ client.on('message',message => {
 	if(!message.content.startsWith(config.prefix)){
 		require('./text-responses/reply.js').SendReply(message);
 	}
+	
+	if(message.guild.voice){
+		if(!message.guild.voice.connection){
+			queue.clear();
+			console.log("Queue Cleared");
+		}
+		else{
+			console.log("Existing connections");
+		}
+	}
 
 	const args = message.content.slice(config.prefix.length).trim().split(/ +/);
 	const commandName = args.shift().toLowerCase();
