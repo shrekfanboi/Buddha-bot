@@ -31,6 +31,7 @@ client.on('message',message => {
 
 	if(!message.content.startsWith(config.prefix)){
 		require('./text-responses/reply.js').SendReply(message);
+		return;
 	}
 	
 	if(message.guild.voice){
