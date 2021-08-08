@@ -2,10 +2,12 @@ module.exports = {
 	name: 'help',
 	description: 'List of all commands',
 	execute(message, args) {
-		const data = [];
+	const data = [];
         const { commands } = message.client;
         data.push('Here\'s a list of all my commands:');
-	    data.push(commands.map(command => '~'+command.name).join('\n'));
+	if(command){
+		data.push(commands.map(command => '~'+command.name).join('\n'));
+	}
         return message.author.send(data,{ split:true })
         .then(() => {
 			if (message.channel.type === 'dm') return;
