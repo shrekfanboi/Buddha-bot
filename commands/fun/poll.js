@@ -3,9 +3,9 @@ module.exports = {
     name:'poll',
     description:'Start a poll',
     execute(message,args){
-        console.log(args);
+        //console.log(args);
         if(args.length == 0 || (args.includes('~') && args.length < 3)) {
-            message.channel.send('\nProper Usage: !poll Question ~ Option1 ~ Option2 ~ ...');
+            message.channel.send('\nProper Usage: ~poll Question ~ Option1 ~ Option2 ~ ...');
             return;
         }
         try{
