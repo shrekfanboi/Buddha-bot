@@ -9,7 +9,12 @@ module.exports = {
             return;
         }
         const ytdl = require('ytdl-core');
-        song =  await require('./modules/search.js').YoutubeSearch(args,ytdl);
+	try{
+	song =  await require('./modules/search.js').YoutubeSearch(args,ytdl);
+	}
+        catch(err){
+		console.log("Error while looking for this song: "+err)
+	}
         if(!queue.get(message.guild.id)){
             const queueConstruct = {
                 messageChannel:message.channel,
