@@ -22,3 +22,5 @@ Here's a list of all my commands:
 > - ~server-info
 > - ~user-info
 ```
+
+Invite my [bot](https://discord.com/api/oauth2/authorize?client_id=813639350591160320&permissions=285115608689&scope=bot) to your server.
