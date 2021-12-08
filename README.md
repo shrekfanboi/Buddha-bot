@@ -15,6 +15,7 @@ Here's a list of all my commands:
 ~skip
 ~stop
 ~upload
+~poll
 ~kick
 ~prune
 ~args-info
