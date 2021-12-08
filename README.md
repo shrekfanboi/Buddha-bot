@@ -1,5 +1,6 @@
 # Buddha-bot
-Discord Bot for Fun and Music
+### Discord Bot for Fun and Music
+<br>
 Here's a list of all my commands:
 
 ```
