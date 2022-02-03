@@ -206,10 +206,10 @@ module.exports ={
                                 results.sort((a,b)=>new Date(b['release_date']) - new Date(a['release_date']));
                                 break;
                             case 'vote_average.asc':
-                                results.sort((a,b)=>new a['vote_average'] - b['vote_average']);
+                                results.sort((a,b)=>a['vote_average'] - b['vote_average']);
                                 break;
                             case 'vote_average.desc':
-                                results.sort((a,b)=>new b['vote_average'] - a['vote_average']);
+                                results.sort((a,b)=>b['vote_average'] - a['vote_average']);
                                 break;
                         }
                     }
