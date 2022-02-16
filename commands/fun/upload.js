@@ -8,10 +8,6 @@ module.exports = {
         const path = require('path');
         const filepath = path.join(__dirname,'..','..','tmp');
         song =  await require('./modules/search.js').YoutubeSearch(args,ytdl);
-        if(parseInt(song.duration) > 300) {
-            message.reply(`This file is too large!`);
-            return;
-        }
         require("./modules/download.js").DownloadYoutubeMp3(song,message,filepath);
     }
 }
