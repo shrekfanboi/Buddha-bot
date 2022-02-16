@@ -194,7 +194,7 @@ module.exports ={
                     if(!results.length){
                         message.channel.send('Exact matches not found');
                     }
-                    const cuttoff = (obj['limit'] || obj['l'])%5 || 5;
+                    const cuttoff = (params['limit'] || params['l'])%5 || 5;
                     results = results.length ? results.slice(0,cuttoff) :payload.slice(0,cuttoff);
                     
                     //sort results if sort option given
