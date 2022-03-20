@@ -288,7 +288,7 @@ module.exports ={
                             return true;
                         }
                     })
-                    const cuttoff = (obj['limit'] || obj['l'])%5 || 5;
+                    const cuttoff = (params['limit'] || params['l'])%5 || 5;
                     results = results.length ? results.slice(0,cuttoff) : payload.slice(0,cuttoff);
                     results.forEach(async(res)=>{
                         try{
