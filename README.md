@@ -1,4 +1,4 @@
-# Buddha-bot
+# Buddha-bot (Taken Down)
 ### Discord Bot for Fun and Music
 <br>
 Here's a list of all my commands:
